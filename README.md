@@ -13,15 +13,15 @@
 
 1. 下载 Xidi 的[最新版本](https://github.com/samuelgr/Xidi/releases)。
 
-1. 在此存储库的 [GameConfigurations 目录](https://github.com/samuelgr/XidiGameConfigurations/tree/master/GameConfigurations) 中查找所需的游戏标题。
+1. 在此存储库的 [GameConfigurations 目录](https://github.com/Kanadeforever/XidiGameConfigurations/tree/master/GameConfigurations) 中查找所需的游戏标题。
 
 1. 检查其中包含的名为 `Xidi.ini` 的配置文件，以了解所需的 Xidi 版本和形式。
    - 通常所需的版本至少为 v3.0.0。
-   - 形式将是 DInput、DInput8、WinMM 或 HookModule + 其他形式之一。有关如何安装不同形式的 Xidi 的更多信息，请参见 [Xidi 的形式](https://github.com/samuelgr/Xidi#forms-of-xidi)。
+   - 形式将是 DInput、DInput8、WinMM 或 HookModule + 其他形式之一。有关如何安装不同形式的 Xidi 的更多信息，请参见 [Xidi 的形式](https://gist.github.com/Kanadeforever/09c2d4ac429cd8b5e42f7afeb8bc2929#xidi%E7%9A%84%E5%BD%A2%E5%BC%8F)。
 
 1. 下载配置文件并将其放置在与游戏形式的 Xidi 相同的目录中。
    - 例如，如果游戏可执行文件位于 `C:\MyFancyGame\App.exe`，而 Xidi 的形式位于 `C:\MyFancyGame\dinput8.dll`，则配置文件应为 `C:\MyFancyGame\Xidi.ini`。
-   - 有关配置文件及其放置位置的更多信息，请参见 [配置 Xidi](https://github.com/samuelgr/Xidi#configuring-xidi)。
+   - 有关配置文件及其放置位置的更多信息，请参见 [配置 Xidi](https://gist.github.com/Kanadeforever/09c2d4ac429cd8b5e42f7afeb8bc2929#%E9%85%8D%E7%BD%AExidi)。
 
 
 ## 贡献
