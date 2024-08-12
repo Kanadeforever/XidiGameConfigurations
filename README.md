@@ -1,43 +1,59 @@
-# Xidi Game Configurations
+# Xidi 游戏配置
 
-This repository contains game-specific configuration files for use with [Xidi](https://www.github.com/samuelgr/Xidi). Each configuration file includes a recommended mapper configuration as well as documentation on how best to get the game working with Xidi.
-
-
-## Using
-
-To use the configuration files contained in this repository:
-
-1. Download the [latest release](https://github.com/samuelgr/Xidi/releases) of Xidi.
-
-1. Look through the [GameConfigurations directory](https://github.com/samuelgr/XidiGameConfigurations/tree/master/GameConfigurations) in this repository for the desired game title.
-
-1. Examine the configuration file, named `Xidi.ini`, contained within for information on which version and form of Xidi is needed.
-   - Typically the version needed will be at least v3.0.0.
-   - Form will be either DInput, DInput8, WinMM, or HookModule + one of the other forms. See [Forms of Xidi](https://github.com/samuelgr/Xidi#forms-of-xidi) for more information on how to install the different forms of Xidi.
-
-1. Download the configuration file and place it into the same directory as the game's form of Xidi.
-   - For example, if the game executable is located at `C:\MyFancyGame\App.exe` and the form of Xidi is located at `C:\MyFancyGame\dinput8.dll` then the configuration file would be `C:\MyFancyGame\Xidi.ini`.
-   - See [Configuring Xidi](https://github.com/samuelgr/Xidi#configuring-xidi) for more information on configuration files and where they should be placed.
+此存储库包含用于 [Xidi](https://www.github.com/samuelgr/Xidi) 的特定游戏配置文件。每个配置文件都包括推荐的映射器配置以及有关如何最好地使游戏与 Xidi 一起工作的文档。
 
 
-## Contributing
+## 使用
 
-Contributions of game configurations to this repository are welcomed and encouraged! There are two options for how to do this.
+要使用此存储库中包含的配置文件：
 
-1. **Submit a pull request.** This requires using `git` commands to clone this repository, committing one or more changes, pushing the changes back to GitHub, and then creating a pull request on GitHub.
+1. 下载 Xidi 的[最新版本](https://github.com/samuelgr/Xidi/releases)。
 
-2. **Create an issue** using the "Configuration File Submission" issue template. Fill in the requested details and paste the proposed configuration file directly into the issue itself.
+1. 在此存储库的 [GameConfigurations 目录](https://github.com/samuelgr/XidiGameConfigurations/tree/master/GameConfigurations) 中查找所需的游戏标题。
 
-Option 1 is preferred and best for a higher number of configuration files, but option 2 is also available for those who are not familiar with `git` workflows or prefer something simpler.
+1. 检查其中包含的名为 `Xidi.ini` 的配置文件，以了解所需的 Xidi 版本和形式。
+   - 通常所需的版本至少为 v3.0.0。
+   - 形式将是 DInput、DInput8、WinMM 或 HookModule + 其他形式之一。有关如何安装不同形式的 Xidi 的更多信息，请参见 [Xidi 的形式](https://github.com/samuelgr/Xidi#forms-of-xidi)。
 
-Regardless of submission option, contributors listed as an author  on any submitted configurations will need to agree to license their contributions to me (samuelgr) under the same 3-clause BSD license that is used by this repository.
+1. 下载配置文件并将其放置在与游戏形式的 Xidi 相同的目录中。
+   - 例如，如果游戏可执行文件位于 `C:\MyFancyGame\App.exe`，而 Xidi 的形式位于 `C:\MyFancyGame\dinput8.dll`，则配置文件应为 `C:\MyFancyGame\Xidi.ini`。
+   - 有关配置文件及其放置位置的更多信息，请参见 [配置 Xidi](https://github.com/samuelgr/Xidi#configuring-xidi)。
 
 
-### Formatting Instructions
+## 贡献
 
-Configuration files in this repository must begin with a comment block at the top, with the configuration itself below it. The comment block identifies the game, Xidi form, tested Xidi version, authors, and so on.
+欢迎并鼓励向此存储库贡献游戏配置！有两种方式可以做到这一点。
 
-Below is a template for the comment section at the top, which can be directly copied and pasted as an easy way of getting started.
+1. **提交拉取请求。** 这需要使用 `git` 命令克隆此存储库，提交一个或多个更改，将更改推送回 GitHub，然后在 GitHub 上创建拉取请求。
+
+2. **创建一个问题**，使用“配置文件提交”问题模板。填写所需的详细信息，并将建议的配置文件直接粘贴到问题本身中。
+
+选项 1 是首选的，并且对于较多的配置文件来说是最好的，但选项 2 也适用于那些不熟悉 `git` 工作流程或更喜欢简单操作的人。
+
+无论选择哪种提交方式，作为作者列在任何提交的配置上的贡献者都需要同意将他们的贡献根据与此存储库使用的相同的 3 条款 BSD 许可证授权给我（samuelgr）。
+
+
+### 格式说明
+
+此存储库中的配置文件必须以顶部的注释块开头，配置本身在其下方。注释块标识游戏、Xidi 形式、测试的 Xidi 版本、作者等。
+
+以下是顶部注释部分的模板，可以直接复制粘贴作为开始的简便方法。
+
+中文版：
+
+```ini
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; （在此处填写应用程序/游戏名称）
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Xidi 版本:     （你用于测试的 Xidi 版本？）
+; Xidi 形式:     （此游戏使用的 Xidi 形式？ - 参见说明）
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 作者:          （贡献者的名字/GitHub 用户名，逗号分隔）
+; 最后修改:      （最后编辑日期，格式为 M/D/YYYY）
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+```
+
+原英文版：
 
 ```ini
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -51,8 +67,8 @@ Below is a template for the comment section at the top, which can be directly co
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ```
 
- - For **Xidi Version** use just the bare version, "4.1.1" for example. Only officially-released versions are allowed, not development or other one-off builds.
- - For **Xidi Form** indicate which form of Xidi is needed for this application. Pick one of the below, as appropriate.
+ - 对于 **Xidi 版本**，仅使用裸版本，例如“4.1.1”。只允许官方发布的版本，不允许开发或其他一次性构建。
+ - 对于 **Xidi 形式**，指明此应用程序需要哪种形式的 Xidi。根据需要选择以下之一。
     - `DInput`
     - `DInput8`
     - `WinMM`
@@ -60,4 +76,4 @@ Below is a template for the comment section at the top, which can be directly co
     - `HookModule + DInput8`
     - `HookModule + WinMM`
 
-After the comment section comes **two blank lines** followed by the rest of the configuration file contents. Refer to the formatting of existing configuration files in this repository for specifics on formatting expectations regarding line spacing and formatting, but the general rule of thumb is **two blank lines between sections** and **one blank line between groups of related settings** such as element mapper configurations for related in-app controls.
+在注释部分之后是**两个空行**，然后是配置文件内容的其余部分。有关行间距和格式的具体期望，请参阅此存储库中现有配置文件的格式，但一般规则是**部分之间有两个空行**，**相关设置组之间有一个空行**，例如相关应用内控件的元素映射器配置。
