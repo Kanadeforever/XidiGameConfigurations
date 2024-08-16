@@ -1,4 +1,5 @@
-# Readme说明
+[English Readme](https://github.com/Kanadeforever/XidiGameConfigurations/blob/master/README.md) | 中文介绍
+
 
 本文档仅为主分支的英译中版，如有更新以主分支内容为准。
 
